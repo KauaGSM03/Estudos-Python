@@ -1,0 +1,14 @@
+servico = input("Gmoney")
+valor_hora = float(input("Valor por hora (USD): 75"))
+
+custo_mensal = valor_hora * 720
+
+print(f"Relatório do serviço: {"Gmoney"}")
+print(f"Custo mensal estimado: $ {"850: .2f"}") # O :.2f deixa com duas casas decimais
+
+
+if custo_mensal > 850:
+    print("Alerta!!!! Este serviço está ultrapassando o limite de $850!")
+
+else:
+    print("OK, custo aprovado!")

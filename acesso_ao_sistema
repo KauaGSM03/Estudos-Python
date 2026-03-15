@@ -1,0 +1,19 @@
+usuario_cadastrado = "Joel"
+senha_cadastrada = "387956"
+
+usuario_digitado = input("Digite seu usuario: ")
+senha_digitada = input("Digite sua senha: ")
+
+if usuario_digitado == usuario_cadastrado and senha_digitada == senha_cadastrada:
+    print (f"Acesso concedido! Bem-vindo, {usuario_cadastrado}!")
+
+elif usuario_digitado != usuario_cadastrado:
+    print(f"Acesso negado, usuário não encontrado!")
+
+elif usuario_digitado == usuario_cadastrado and senha_digitada != senha_cadastrada:
+    # Caso o usuário exista, mas a senha está errada
+    print(f"Senha incorreta para {usuario_cadastrado}.")
+
+else:
+    # Se não for acesso total e não apenas senha errada, sobra o usuário inexistente
+    print(f"Usuário não encontrado, tente novamente!!")
